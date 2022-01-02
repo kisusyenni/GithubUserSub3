@@ -11,4 +11,24 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="repository">Repository</string>
+    <string name="detail_user_content_description">User Image</string>
+    <string name="username">"@%s"</string>
+    <string name="repositoryTotal">"Repository: %s"</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Find Github user by username</string>
+    <string name="tab_text_followers">Followers</string>
+    <string name="tab_text_following">Following</string>
+    <string name="main_empty_msg">There is no user</string>
+    <string name="main_not_found_msg">Username %s is not found</string>
+    <string name="follow_fragment_empty_msg">This user doesn\'t %s</string>
+    <string name="follow_fragment_error_msg">There is something wrong while fetching the data. Please visit again later!</string>
+    <string name="apptheme">AppTheme</string>
+    <string name="more">more</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="favorite_user">Favorite User</string>
+    <string name="my_favorite">My Favorite</string>
+    <string name="add_to_favorite">Add to Favorite</string>
+    <string name="remove_from_favorite">Removed from Favorite</string>
 </resources>

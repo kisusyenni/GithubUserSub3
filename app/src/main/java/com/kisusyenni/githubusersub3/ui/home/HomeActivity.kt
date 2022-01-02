@@ -1,4 +1,4 @@
-package com.kisusyenni.githubusersub3.ui
+package com.kisusyenni.githubusersub3.ui.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

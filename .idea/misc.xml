@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Exercise/Android/GithubUserSub3/app/src/main/res/layout/activity_home.xml" value="0.4" />
         <entry key="..\:/Exercise/Android/GithubUserSub3/app/src/main/res/layout/activity_main.xml" value="0.23233695652173914" />
+        <entry key="..\:/Exercise/Android/GithubUserSub3/app/src/main/res/layout/followers_fragment.xml" value="0.2259963768115942" />
+        <entry key="..\:/Exercise/Android/GithubUserSub3/app/src/main/res/layout/item_row_user.xml" value="0.264" />
       </map>
     </option>
   </component>

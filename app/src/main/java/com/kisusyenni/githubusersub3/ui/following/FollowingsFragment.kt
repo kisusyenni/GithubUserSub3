@@ -11,6 +11,7 @@ import com.kisusyenni.githubusersub3.R
 import com.kisusyenni.githubusersub3.databinding.FollowersFragmentBinding
 import com.kisusyenni.githubusersub3.databinding.FollowingsFragmentBinding
 import com.kisusyenni.githubusersub3.ui.followers.FollowersViewModel
+import com.kisusyenni.githubusersub3.viewmodel.ViewModelFactory
 
 class FollowingsFragment : Fragment() {
 
@@ -34,7 +35,8 @@ class FollowingsFragment : Fragment() {
         progressBar.isVisible = true
 
         if(activity != null) {
-            viewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory())[FollowingsViewModel::class.java]
+            val factory = ViewModelFactory.getInstance()
+            viewModel = ViewModelProvider(this, factory)[FollowingsViewModel::class.java]
 
         }
     }

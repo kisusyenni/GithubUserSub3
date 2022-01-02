@@ -1,4 +1,4 @@
-package com.kisusyenni.githubusersub3.ui.followers
+package com.kisusyenni.githubusersub3.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -7,34 +7,34 @@ import com.bumptech.glide.Glide
 import com.kisusyenni.githubusersub3.data.source.local.entity.User
 import com.kisusyenni.githubusersub3.databinding.ItemRowUserBinding
 
-class FollowersAdapter: RecyclerView.Adapter<FollowersAdapter.FollowersViewHolder>() {
+class UserListAdapter: RecyclerView.Adapter<UserListAdapter.UsersViewHolder>() {
     private lateinit var onItemClickCallback: OnItemClickCallback
 
-    private var listFollowers = ArrayList<User>()
+    private var listUsers = ArrayList<User>()
 
-    fun setFollowers(followers: List<User>?) {
-        if (followers == null) return
-        this.listFollowers.clear()
-        this.listFollowers.addAll(followers)
+    fun setUsers(users: List<User>?) {
+        if (users == null) return
+        this.listUsers.clear()
+        this.listUsers.addAll(users)
     }
 
     fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
         this.onItemClickCallback = onItemClickCallback
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FollowersViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UsersViewHolder {
         val itemRowUserBinding = ItemRowUserBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return FollowersViewHolder(itemRowUserBinding)
+        return UsersViewHolder(itemRowUserBinding)
     }
 
-    override fun onBindViewHolder(holder: FollowersViewHolder, position: Int) {
-        val follower = listFollowers[position]
+    override fun onBindViewHolder(holder: UsersViewHolder, position: Int) {
+        val follower = listUsers[position]
         holder.bind(follower)
     }
 
-    override fun getItemCount(): Int = listFollowers.size
+    override fun getItemCount(): Int = listUsers.size
 
-    inner class FollowersViewHolder(private val binding: ItemRowUserBinding) : RecyclerView.ViewHolder(binding.root) {
+    inner class UsersViewHolder(private val binding: ItemRowUserBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(follower: User) {
             with(binding) {
                 tvUserUsername.text = follower.username
@@ -47,6 +47,6 @@ class FollowersAdapter: RecyclerView.Adapter<FollowersAdapter.FollowersViewHolde
     }
 
     interface OnItemClickCallback {
-        fun onItemClicked(id: String)
+        fun onItemClicked(username: String)
     }
 }

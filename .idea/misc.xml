@@ -3,7 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Exercise/Android/GithubUserSub3/app/src/main/res/layout/activity_home.xml" value="0.4" />
+        <entry key="..\:/Exercise/Android/GithubUserSub3/app/src/main/res/layout/activity_detail.xml" value="0.13385416666666666" />
+        <entry key="..\:/Exercise/Android/GithubUserSub3/app/src/main/res/layout/activity_home.xml" value="0.3584379358437936" />
         <entry key="..\:/Exercise/Android/GithubUserSub3/app/src/main/res/layout/activity_main.xml" value="0.23233695652173914" />
         <entry key="..\:/Exercise/Android/GithubUserSub3/app/src/main/res/layout/followers_fragment.xml" value="0.2259963768115942" />
         <entry key="..\:/Exercise/Android/GithubUserSub3/app/src/main/res/layout/followings_fragment.xml" value="0.13333333333333333" />

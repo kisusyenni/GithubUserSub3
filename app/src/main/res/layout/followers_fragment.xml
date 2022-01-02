@@ -7,7 +7,7 @@
     tools:context=".ui.followers.FollowersFragment">
 
     <TextView
-        android:id="@+id/mainMessage"
+        android:id="@+id/followersMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_users"
+        android:id="@+id/rv_followers"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,7 +26,7 @@
         app:layout_constraintVertical_bias="0.0"
         tools:listitem="@layout/item_row_user" />
     <ProgressBar
-        android:id="@+id/progressBar"
+        android:id="@+id/followersProgressBar"
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

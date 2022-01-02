@@ -9,8 +9,10 @@ import android.view.ViewGroup
 import androidx.core.view.isVisible
 import com.kisusyenni.githubusersub3.R
 import com.kisusyenni.githubusersub3.databinding.FollowersFragmentBinding
+import com.kisusyenni.githubusersub3.ui.adapter.UserListAdapter
+import com.kisusyenni.githubusersub3.viewmodel.ViewModelFactory
 
-class FollowersFragment : Fragment() {
+class FollowersFragment : Fragment(), UserListAdapter.OnItemClickCallback {
 
     private var _followersFragmentBinding: FollowersFragmentBinding? = null
     private val followersFragmentBinding get() = _followersFragmentBinding!!
@@ -27,13 +29,18 @@ class FollowersFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val progressBar = followersFragmentBinding.progressBar
+        val progressBar = followersFragmentBinding.followersProgressBar
         progressBar.isVisible = true
 
         if(activity != null) {
-            viewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory())[FollowersViewModel::class.java]
+            val factory = ViewModelFactory.getInstance()
+            viewModel = ViewModelProvider(this, factory)[FollowersViewModel::class.java]
 
         }
+    }
+
+    override fun onItemClicked(id: String) {
+        TODO("Not yet implemented")
     }
 
 }
